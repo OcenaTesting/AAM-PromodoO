@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aam Pomodoro - Intelligent focus timer with Spotify integration and AI task planning.">
+    <meta name="theme-color" content="#0B2B5A">
+    <title>Aam Pomodoro | Deep Focus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              promodo: {
+                bg: '#0B2B5A',
+                card: '#11356A',
+                accent: '#1E90FF',
+                text: '#E0E7FF',
+                muted: '#6B7280'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #0B2B5A;
+        color: #E0E7FF;
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom scrollbar for deep blue theme */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #082045;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1E90FF;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3B82F6;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
